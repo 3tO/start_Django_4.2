@@ -1,0 +1,14 @@
+*.pyc
+*~
+*.sublime-project
+*.sublime-workspace
+db.sqlite3
+.gitignore
+src
+node_modules
+gulpfile.js
+package.json
+package-lock.json
+local_settings.py
+img
+static

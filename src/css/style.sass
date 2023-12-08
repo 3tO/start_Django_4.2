@@ -1,0 +1,184 @@
+@@include('normalize.sass')
+body
+  background: #def
+  color: dred
+
+
+
+*
+  margin: 0
+  padding: 0
+  /*box-sizing: border-box*/
+
+
+//::before,
+//::after
+  box-sizing: inherit
+
+
+.success
+  color: green
+  margin-left: 20px
+  margin-top: 10px
+  opacity: 0
+  animation: pulse 5s 
+  animation-iteration-count: 1
+
+
+
+  
+  
+.container 
+  height: 100vh
+  /*padding-top: 50px*/
+  display: flex
+  flex-direction: column
+  /*background: #111*/
+
+
+header 
+  height: 45px
+  /*position: fixed*/
+  top: 0
+  left: 0
+  width: 100%
+  background: grey
+  color: white
+  text-align: center
+  padding: 0
+
+h1
+  margin: 0
+.wrap 
+  display: flex
+  flex-direction: row
+  flex-grow: 1
+
+
+.content 
+  padding-top: 1em
+  padding-left: 1em
+  flex: 1
+  display: flex
+  flex-direction: column
+
+
+aside
+  flex: 1
+  /* background: red*/
+  overflow-y: auto
+  padding: 1em 1em .5em 1em
+  
+
+
+main
+  /*background: green*/
+  flex: 3
+  overflow: auto
+
+
+footer 
+  height: 25px
+  /*width: 100%*/
+  background: grey
+  color: white
+  text-align: center
+  padding: 0
+
+
+.errorlist 
+  color: red
+
+
+td 
+  margin-left: -10px
+
+
+td>a
+  text-decoration: none
+
+
+table, form 
+  padding-top: 1em
+
+
+table 
+  min-width: 500px
+
+
+p 
+  padding-bottom: 0.5em
+
+
+.button
+  display: inline-block
+  background: #4285f4
+  color: #fff
+  text-transform: uppercase
+  padding: 5px 25px
+  border-radius: 5px
+  box-shadow: 0px 17px 10px -10px rgba(0, 0, 0, 0.4)
+  cursor: pointer
+  -webkit-transition: all ease-in-out 300ms
+  transition: all ease-in-out 300ms
+  font-size: 0.9em
+
+
+.button:hover 
+  box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2)
+  transform: translate(0px, -2px) scale(1)
+
+
+.btn-del 
+  background: #da4f49
+  text-decoration: none
+  /*font-size: 1em*/
+
+
+.transcription 
+  color: #999
+
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) 
+  body 
+    font-size: 1.2em
+  
+
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) 
+  body 
+    /*font-size: 1.5em*/
+  
+ /* header */
+    /*height: 105px*/
+  
+  td 
+    padding-bottom: 0.5em
+  
+
+  .wrap 
+    position: relative
+    flex-direction: column
+
+
+    display: none
+
+@keyframes pulse 
+  0% 
+    opacity: 0
+  
+  25% 
+      opacity: 1
+    
+  50% 
+      opacity: 1
+    
+  100% 
+    opacity: 0
+
+
+
+
+
